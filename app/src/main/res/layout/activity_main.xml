@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/playGame"
+        android:layout_width="104dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#F44336"
+        android:text="Game Over"
+        app:layout_constraintBottom_toTopOf="@+id/playShot"
+        app:layout_constraintEnd_toStartOf="@+id/playPunch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/playPac"
+        android:layout_width="104dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="61dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="Pacman"
+        app:layout_constraintBottom_toTopOf="@+id/playTruck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playPunch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/playShot"
+        android:layout_width="104dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="160dp"
+        android:backgroundTint="#673AB7"
+        android:text="Pucanj"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/playThunder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playGame" />
+
+    <Button
+        android:id="@+id/playThunder"
+        android:layout_width="104dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="150dp"
+        android:backgroundTint="#009688"
+        android:text="Grom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/playTruck"
+        app:layout_constraintStart_toEndOf="@+id/playShot"
+        app:layout_constraintTop_toBottomOf="@+id/playPunch" />
+
+    <Button
+        android:id="@+id/playPunch"
+        android:layout_width="104dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="65dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Udarac"
+        app:layout_constraintBottom_toTopOf="@+id/playThunder"
+        app:layout_constraintEnd_toStartOf="@+id/playPac"
+        app:layout_constraintStart_toEndOf="@+id/playGame"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/playTruck"
+        android:layout_width="114dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="150dp"
+        android:backgroundTint="#E91E63"
+        android:text="Kamion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playThunder"
+        app:layout_constraintTop_toBottomOf="@+id/playPac" />
+</androidx.constraintlayout.widget.ConstraintLayout>
